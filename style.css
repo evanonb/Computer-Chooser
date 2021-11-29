@@ -1,0 +1,41 @@
+h1 {
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h4 {
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.css-nav-text {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.css-border-width {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.css-img-width {
+  width: 40%;
+  height: auto;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .css-img-width {
+    width: 70%;
+  }
+}
