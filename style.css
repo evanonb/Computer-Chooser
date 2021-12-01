@@ -80,7 +80,7 @@ h4 {
 }
 
 .css-flip-card-back {
-  background-color: #00FFFF;
-  color: black;
+  background-color: #212529;
+  color: white;
   transform: rotateY(180deg);
 }
