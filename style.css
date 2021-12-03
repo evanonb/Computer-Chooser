@@ -39,9 +39,7 @@ h4 {
 }
 
 @media only screen and (max-width: 576px) {
-  .css-img-width {
-    width: 70%;
-  }
+  .css-img-width {width: 70%;}
 }
 
 /*Card Flipping Styling*/
@@ -60,7 +58,7 @@ h4 {
   /*text-align: center;*/
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
 }
 
 .css-flip-card:hover .css-flip-card-inner {
@@ -77,10 +75,12 @@ h4 {
 
 .css-flip-card-front {
   background-color:white;
+  border-radius: 25px;
 }
 
 .css-flip-card-back {
   background-color: #212529;
   color: white;
   transform: rotateY(180deg);
+  border-radius: 25px;
 }
