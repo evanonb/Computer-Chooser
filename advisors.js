@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	//stores data to local storage and loads post page
   $("#signUp").click(function(){
     var hold = $("#first").val();
     localStorage.setItem("firstname", hold);
