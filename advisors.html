@@ -35,7 +35,7 @@
 <!--form-->
       <form action="/advisors_confirmation.html" method="post">
         <div class="row">
-          <div class="col-sm my-3" align="center">
+          <!--<div class="col-sm my-3" align="center">
             <label for="fname"><b>First name</b></label>
             <input type="text" placeholder="Enter first name" name="fname" id="first" required>
             <br><br>
@@ -46,14 +46,49 @@
             <input type="email" placeholder="Enter email address" name="email" id="eadd" required>
             <br><br>
             <button class=""  id="signUp">Sign up</button>
+          </div>-->
+
+
+
+          <div class="col-sm my-3" align="center">
+            <label for="fname"><b>First name</b></label>
+            <input type="text" placeholder="Enter first name" name="fname" id="first" required>
+            <br><br>
+            <label for="lname"><b>Last name</b></label>
+            <input type="text" placeholder="Enter last name" name="lname" id="last" required>
+            <br><br>
+            <label for="email"><b>Email Address</b></label>
+            <input type="email" placeholder="Enter email address" name="email" id="eadd" required>&emsp;&emsp;
           </div>
         </div>
-        <div class="rom">
-          <div class="col-sm my-3" align="center">
+        <div class="row">
+          <div class="col-sm pr-5 mr-5 my-3" align="right">
+            <input type="checkbox" id="school" name="school" value="School">
+            <label for="school"> School</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<br>
+            <input type="checkbox" id="personal" name="personal" value="Personal">
+            <label for="personal"> Personal</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;<br>
+            <input type="checkbox" id="work" name="work" value="Work">
+            <label for="work"> Work</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<br>
+            <input type="checkbox" id="gaming" name="gaming" value="Gaming">
+            <label for="gaming"> Gaming</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+            <input type="checkbox" id="graphic_design" name="graphic_design" value="Graphic_Design">
+            <label for="graphic_design"> Graphic Design</label>&emsp;&emsp;&emsp;&emsp;&ensp;<br>
+            <input type="checkbox" id="video_music_creation" name="video_music_creation" value="Video_Music_Creation">
+            <label for="video_music_creation"> Video/Music Creation</label>&emsp;&ensp;&nbsp;<br>
+            <input type="checkbox" id="other" name="other" value="Other">
+            <input type="text" placeholder="Other" name="other" id="other">
           </div>
-          <div class="col-sm my-3" align="center">
+          <div class="col-sm pl-5 ml-5 my-3" align="left">
+            &emsp;&emsp;&emsp;&emsp;<textarea style="height: 175px; width: 250px" name="comment" form="usrform" placeholder="Enter links to computers you are considering"></textarea>
           </div>
         </div>
+        <div class="row">
+          <div class="col-sm my-3" align="center">
+            <button class="btn btn-outline-light" id="signUp">Submit Advisor Request</button>
+          </div>
+        </div>
+
+
       </form>
     </div>
   </body>
