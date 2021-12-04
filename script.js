@@ -1,8 +1,13 @@
-function display1() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+$(document).ready(function(){
+	//stores data to local storage and loads post page
+  $("#signUp").click(function(){
+	var hold = $("#first").val();
+	localStorage.setItem("firstname", hold);
+	hold = $("#last").val();
+	localStorage.setItem("lastname", hold);
+	hold = $("#eadd").val();
+	localStorage.setItem("email", hold);
+	var url = "posted.html";
+    $(location).attr('href',url);
+  });
+});
