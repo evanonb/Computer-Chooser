@@ -14,7 +14,7 @@
     <nav class="navbar navbar-light bg-dark navbar-expand-sm m-3 justify-content-center">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html"><img class="css-nav-img" src="/images/logos/main-logo.jpeg"></a>
+            <a class="nav-link" href="index.html"><img class="css-nav-img" src="/images/logos/main-logo.jpeg" alt="computer chooser logo"></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link css-nav-text text-white px-5" href="guidance.html">Guidance</a>
@@ -33,62 +33,38 @@
       <h1 class="mt-4 mb-0 css-responsive-design">Advisors</h1>
       <h6 class="mt-1 mx-5 mb-3 text-center">Providing a method to contact an IT professional to answer your questions when making the choice to which computer will work best for you</h6>
 <!--form-->
-      <form action="/advisors_confirmation.html" method="post">
-        <div class="row">
-          <!--<div class="col-sm my-3" align="center">
-            <label for="fname"><b>First name</b></label>
-            <input type="text" placeholder="Enter first name" name="fname" id="first" required>
-            <br><br>
-            <label for="lname"><b>Last name</b></label>
-            <input type="text" placeholder="Enter last name" name="lname" id="last" required>
-            <br><br>
-            <label for="email"><b>Email Address</b></label>
-            <input type="email" placeholder="Enter email address" name="email" id="eadd" required>
-            <br><br>
-            <button class=""  id="signUp">Sign up</button>
-          </div>-->
-
-
-
-          <div class="col-sm my-3" align="center">
-            <label for="fname"><b>First name</b></label>
-            <input type="text" placeholder="Enter first name" name="fname" id="first" required>
-            <br><br>
-            <label for="lname"><b>Last name</b></label>
-            <input type="text" placeholder="Enter last name" name="lname" id="last" required>
-            <br><br>
-            <label for="email"><b>Email Address</b></label>
-            <input type="email" placeholder="Enter email address" name="email" id="eadd" required>&emsp;&emsp;
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm pr-5 mr-5 my-3" align="right">
-            <input type="checkbox" id="school" name="school" value="School">
-            <label for="school"> School</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<br>
-            <input type="checkbox" id="personal" name="personal" value="Personal">
-            <label for="personal"> Personal</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;<br>
-            <input type="checkbox" id="work" name="work" value="Work">
-            <label for="work"> Work</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<br>
-            <input type="checkbox" id="gaming" name="gaming" value="Gaming">
-            <label for="gaming"> Gaming</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
-            <input type="checkbox" id="graphic_design" name="graphic_design" value="Graphic_Design">
-            <label for="graphic_design"> Graphic Design</label>&emsp;&emsp;&emsp;&emsp;&ensp;<br>
-            <input type="checkbox" id="video_music_creation" name="video_music_creation" value="Video_Music_Creation">
-            <label for="video_music_creation"> Video/Music Creation</label>&emsp;&ensp;&nbsp;<br>
-            <input type="checkbox" id="other" name="other" value="Other">
-            <input type="text" placeholder="Other" name="other" id="other">
-          </div>
-          <div class="col-sm pl-5 ml-5 my-3" align="left">
-            &emsp;&emsp;&emsp;&emsp;<textarea style="height: 175px; width: 250px" name="comment" form="usrform" placeholder="Enter links to computers you are considering"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm my-3" align="center">
+      <form class="css-form" action="/advisors_confirmation.html" method="post">
+<!--contact information section-->
+        <h5><b><br>CONTACT INFORMATION</b></h5>
+          <label for="fname"><b>First name</b></label>
+            <input type="text" placeholder="Enter first name" name="fname" id="fname" required><br><br>
+          <label for="lname"><b>Last name</b></label>
+            <input type="text" placeholder="Enter last name" name="lname" id="lname" required><br><br>
+          <label for="email"><b>Email Address</b></label>
+            <input type="email" placeholder="Enter email address" name="email" id="email" required><br><br><br>
+<!--requirements section-->
+        <h5><b>WHAT WILL YOU USE THIS COMPUTER FOR?<br>(SELECT MULTIPLE)</b></h5>
+          <input type="checkbox" id="school" name="school" value="School">
+            <label for="school"> School</label><br>
+          <input type="checkbox" id="personal" name="personal" value="Personal">
+            <label for="personal"> Personal</label><br>
+          <input type="checkbox" id="work" name="work" value="Work">
+            <label for="work"> Work</label><br>
+          <input type="checkbox" id="gaming" name="gaming" value="Gaming">
+            <label for="gaming"> Gaming</label><br>
+          <input type="checkbox" id="graphic_design" name="graphic_design" value="Graphic_Design">
+            <label for="graphic_design"> Graphic Design</label><br>
+          <input type="checkbox" id="video_music_creation" name="video_music_creation" value="Video_Music_Creation">
+            <label for="video_music_creation"> Video/Music Creation</label><br>
+          <input type="checkbox" id="other1" name="other1" value="Other">
+            <label for="other1"><p hidden>other1</p></label>
+          <input type="text" placeholder="Other" name="other2" id="other2">
+            <label for="other2"><p hidden>other2</p></label><br><br><br>
+<!--links section-->
+            <h5><b>INSERT LINKS FOR COMPUTERS YOU ARE CONSIDERING<br>(OPTIONAL)</b></h5>
+            <textarea style="height: 175px; width: 250px" name="comment" form="usrform" placeholder="Enter links to computers you are considering" id="links"></textarea><label for="links"><p hidden>links</p></label><br><br>
+<!--submit form button-->
             <button class="btn btn-outline-light" id="signUp">Submit Advisor Request</button>
-          </div>
-        </div>
-
-
       </form>
     </div>
   </body>

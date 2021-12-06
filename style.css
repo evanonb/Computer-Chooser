@@ -46,6 +46,16 @@ h4 {
   font-size: 1.1em;
 }
 
+.css-form { 
+  margin: 0 auto; 
+  width: 250px;
+}
+
+.css-thanks {
+  margin: 0 auto; 
+  width: 700px;
+}
+
 @media only screen and (max-width: 576px) {
   .css-img-width {width: 70%;}
   .css-nav-img {

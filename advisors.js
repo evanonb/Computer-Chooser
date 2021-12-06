@@ -4,7 +4,7 @@ $(document).ready(function(){
     localStorage.setItem("firstname", hold);
     hold = $("#last").val();
     localStorage.setItem("lastname", hold);
-    hold = $("#eadd").val();
+    hold = $("#email").val();
     localStorage.setItem("email", hold);
     var url = "advisors_confirmation.html";
     $(location).attr('href',url);
