@@ -7,41 +7,77 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="advisors_confirmation.js"></script>
   </head>
-  <body class="bg-dark text-white">
 <!--navbar-->
-    <nav class="navbar navbar-light bg-dark navbar-expand-sm m-3 justify-content-center">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"><img class="css-nav-img" src="/images/logos/main-logo.jpeg" alt="computer chooser logo"></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link css-nav-text text-white px-5" href="guidance.html">Guidance</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link css-nav-text text-light px-5" href="recommendations.html">Recommendations</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link css-nav-text text-light px-5" href="advisors.html">Advisors</a>
-          </li>
-        </ul>
-    </nav>
+  <nav class="navbar navbar-light bg-dark navbar-expand-sm m-3 justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html"><img class="css-nav-img" src="/images/logos/main-logo.jpeg" alt="computer chooser logo"></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link css-nav-text text-white px-5" href="guidance.html">Guidance</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link css-nav-text text-light px-5" href="recommendations.html">Recommendations</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link css-nav-text text-light px-5" href="advisors.html">Advisors</a>
+        </li>
+      </ul>
+  </nav>
+  <body class="bg-dark text-white">
     <div class="container-fluid">
 <!--title and description-->
       <span class="border-3 border-top mw-auto css-border-width"></span>
       <h1 class="mt-4 mb-0 css-responsive-design">Advisors</h1>
       <h6 class="mt-1 mx-5 mb-3 text-center">Providing a method to contact an IT professional to answer your questions when making the choice to which computer will work best for you</h6>
-
-      <div class="item2 grid-item" id="thankstag">
-	</div>
-  
-        <div class="rom">
-          <div class="col-sm my-3" align="center">
+<!--confirmation message-->
+      <div class="item2 grid-item" id="thankstag"></div><br><br><br>
+<!--recommendations suggestions section-->
+      <div class="css-thanks">
+        <h4>In the meantime check out our recommended computers in the recommendations tab!</h4>
+<!--recommended computers carousel-->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+<!--carousel button controls-->
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"><p hidden>image0</p></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"><p hidden>image1</p></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"><p hidden>image2</p></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"><p hidden>image3</p></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"><p hidden>image4</p></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="5"><p hidden>image5</p></button>
           </div>
-          <div class="col-sm my-3" align="center">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"><p hidden>previous image</p></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"><p hidden>next image</p></span>
+          </button>
+<!--carousel images-->
+          <div class="carousel-inner">
+            <div class="carousel-item text-center active">
+              <img src="/images/desktops/hp-chromebase.jpg" style="width: 80%;" alt="hp chromebase desktop">
+            </div>
+            <div class="carousel-item text-center">
+              <img src="/images/laptops/razer-blade-15.jpg" style="width: 80%;" alt="razer blade 15 laptop">
+            </div>
+            <div class="carousel-item text-center">
+              <img src="/images/laptops/dell-xps-13.jpg" style="width: 80%;" alt="dell xps 13 9310 laptop">
+            </div>
+            <div class="carousel-item text-center">
+              <img src="/images/desktops/microsoft-surface-studio-2.jpg" style="width: 80%;" alt="microsoft surface studio 2 desktop">
+            </div>
+            <div class="carousel-item text-center">
+              <img src="/images/laptops/macbook-pro-m1-pro.jpg" style="width: 80%;" alt="apple macbook pro 2021 laptop">
+            </div>
+            <div class="carousel-item text-center">
+              <img src="/images/desktops/dell-inspiron-7700.jpg" style="width: 80%;" alt="dell inspiron 7700 desktop">
+            </div>
           </div>
         </div>
+      </div>
     </div>
   </body>
   <footer class="mt-5 p-5">

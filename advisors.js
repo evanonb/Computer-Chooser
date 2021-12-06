@@ -1,8 +1,8 @@
 $(document).ready(function(){
   $("#signUp").click(function(){
-    var hold = $("#first").val();
+    var hold = $("#fname").val();
     localStorage.setItem("firstname", hold);
-    hold = $("#last").val();
+    hold = $("#lname").val();
     localStorage.setItem("lastname", hold);
     hold = $("#email").val();
     localStorage.setItem("email", hold);
